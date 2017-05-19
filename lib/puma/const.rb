@@ -146,7 +146,7 @@ module Puma
     # This is the maximum header that is allowed before a client is booted.  The parser detects
     # this, but we'd also like to do this as well.
     # MAX_HEADER = 1024 * (80 + 32)
-    MAX_HEADER = 1024 * (80 + 32) * 10
+    MAX_HEADER = 5024 * (80 + 32) * 100 
 
     # Maximum request body size before it is moved out of memory and into a tempfile for reading.
     MAX_BODY = MAX_HEADER
